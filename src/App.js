@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 import './App.css';
 
 // Import images (replace with your own image paths)
