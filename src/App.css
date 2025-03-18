@@ -189,11 +189,13 @@
 }
 
 .person-info {
-  text-align: center;
-  margin-top: 5px; /* Adjust spacing */
-  font-size: 14px; /* Adjust font size */
+  text-align: left; /* Align text to the left */
+  margin-top: 5px;
+  font-size: 13px; /* Slightly smaller font */
+  line-height: 1.4; /* Improve line spacing */
+  padding: 0 5px; /* Add padding for better spacing */
 }
 
 .person-info div {
-  margin: 2px 0; /* Adjust spacing between lines */
+  margin: 2px 0;
 }

@@ -27,26 +27,6 @@ function App() {
   const handleBoxClick = (boxName) => {
     setActiveBox(boxName);
   };
-  const people = {
-    'Brother 1': { name: 'John Doe', dob: '1973-05-15', dod: 'N/A', address: '123 Main St, Kathmandu' },
-    'Brother 2': { name: 'Jane Smith', dob: '1968-12-20', dod: '2023-11-10', address: '456 Oak Ave, Pokhara' },
-    'Wife 1': { name: 'Alice Johnson', dob: '1975-08-01', dod: 'N/A', address: '789 Pine Ln, Lalitpur' },
-    'Wife 2': { name: 'Emily Brown', dob: '1978-03-25', dod: 'N/A', address: '101 Elm Rd, Bhaktapur' },
-    'Wife 3': { name: 'Sophia Davis', dob: '1971-11-12', dod: 'N/A', address: '202 Maple Dr, Chitwan' },
-    'Wife 4': { name: 'Olivia Wilson', dob: '1974-06-30', dod: 'N/A', address: '303 Cedar Ct, Butwal' },
-    'Child 1': { name: 'Liam Garcia', dob: '2003-09-18', dod: 'N/A', address: '404 Birch St, Kathmandu' },
-    'Child 2': { name: 'Noah Rodriguez', dob: '2005-04-05', dod: 'N/A', address: '505 Willow Way, Lalitpur' },
-    'Child 3': { name: 'Oliver Martinez', dob: '2001-12-10', dod: 'N/A', address: '606 Redwood Ave, Kathmandu' },
-    'Child 4': { name: 'Elijah Anderson', dob: '2004-07-22', dod: 'N/A', address: '707 Spruce Ln, Bhaktapur' },
-    'Child 5': { name: 'William Thomas', dob: '2002-02-15', dod: 'N/A', address: '808 Pine Rd, Pokhara' },
-    'Child 6': { name: 'James Jackson', dob: '2000-11-03', dod: 'N/A', address: '909 Oak Ct, Pokhara' },
-    'Child 7': { name: 'Benjamin White', dob: '1999-08-28', dod: 'N/A', address: '1010 Maple St, Chitwan' },
-    'Child 8': { name: 'Lucas Harris', dob: '1998-05-12', dod: 'N/A', address: '1111 Cedar Way, Chitwan' },
-    'Child 9': { name: 'Henry Martin', dob: '1997-02-01', dod: 'N/A', address: '1212 Birch Ave, Chitwan' },
-    'Child 10': { name: 'Theodore Thompson', dob: '1996-11-20', dod: 'N/A', address: '1313 Willow Ln, Chitwan' },
-    'Child 11': { name: 'Jack Garcia', dob: '1995-09-09', dod: 'N/A', address: '1414 Redwood Rd, Butwal' },
-    'Child 12': { name: 'Levi Perez', dob: '1994-06-25', dod: 'N/A', address: '1515 Spruce Ct, Butwal' },
-  };
 
   return (
     <div className="container">
@@ -57,14 +37,12 @@ function App() {
             onClick={() => handleBoxClick('Brother 1')}
           >
             <img src={brother1Image} alt="Brother 1" className="box-image" />
-            <div className="person-info">
-              <div>{people['Brother 1'].name}</div>
-              <div>DOB: {people['Brother 1'].dob}</div>
-              <div>DOD: {people['Brother 1'].dod}</div>
-              <div>Address: {people['Brother 1'].address}</div>
-            </div>
-
             Brother 1
+            <div className="person-info">
+              <div>Date of Birth: 01-01-1980</div>
+              <div>Date of Death: N/A</div>
+              <div>Address: 123 Main St.</div>
+            </div>
           </div>
           <div className="wives-container">
             <div className="wife-group">
@@ -73,13 +51,12 @@ function App() {
                 onClick={() => handleBoxClick('Wife 1')}
               >
                 <img src={wife1Image} alt="Wife 1" className="box-image" />
-                <div className="person-info">
-                  <div>{people['Wife 1'].name}</div>
-                  <div>DOB: {people['Wife 1'].dob}</div>
-                  <div>DOD: {people['Wife 1'].dod}</div>
-                  <div>Address: {people['Wife 1'].address}</div>
-                </div>
                 Wife 1
+                <div className="person-info">
+                  <div>Date of Birth: 01-01-1985</div>
+                  <div>Date of Death: N/A</div>
+                  <div>Address: 456 Oak Ave.</div>
+                </div>
               </div>
               <div className="children-container">
                 <div className="child-box">
@@ -103,6 +80,11 @@ function App() {
               >
                 <img src={wife2Image} alt="Wife 2" className="box-image" />
                 Wife 2
+                <div className="person-info">
+                  <div>Date of Birth: 01-01-1990</div>
+                  <div>Date of Death: N/A</div>
+                  <div>Address: 789 Pine Blvd.</div>
+                </div>
               </div>
               <div className="children-container">
                 <div className="child-box">
@@ -128,6 +110,11 @@ function App() {
           >
             <img src={brother2Image} alt="Brother 2" className="box-image" />
             Brother 2
+            <div className="person-info">
+              <div>Date of Birth: 01-01-1982</div>
+              <div>Date of Death: N/A</div>
+              <div>Address: 789 Birch Rd.</div>
+            </div>
           </div>
           <div className="wives-container">
             <div className="wife-group">
@@ -137,6 +124,11 @@ function App() {
               >
                 <img src={wife3Image} alt="Wife 3" className="box-image" />
                 Wife 3
+                <div className="person-info">
+                  <div>Date of Birth: 01-01-1992</div>
+                  <div>Date of Death: N/A</div>
+                  <div>Address: 123 Maple St.</div>
+                </div>
               </div>
               <div className="children-container">
                 <div className="child-box">
@@ -164,6 +156,11 @@ function App() {
               >
                 <img src={wife4Image} alt="Wife 4" className="box-image" />
                 Wife 4
+                <div className="person-info">
+                  <div>Date of Birth: 01-01-1995</div>
+                  <div>Date of Death: N/A</div>
+                  <div>Address: 456 Elm St.</div>
+                </div>
               </div>
               <div className="children-container">
                 <div className="child-box">
