@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Family Tree App - README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This document provides instructions and information about the Family Tree App.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The Family Tree App is a React application that displays a family tree structure. It allows users to click on person boxes to view their detailed information.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Interactive Family Tree:** Visual representation of a family tree with clickable person boxes.
+* **Detailed Information:** Displays date of birth, date of death (if applicable), and address for each person.
+* **Visual Cues:** Highlights the selected person box for easy identification.
+* **Vercel Analytics:** Implements Vercel Analytics for tracking user interactions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+* Node.js and npm (Node Package Manager) installed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+1.  **Clone the Repository (if applicable):**
+    ```bash
+    git clone <your-repository-url>
+    cd <your-repository-directory>
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.  **Start the Development Server:**
+    ```bash
+    npm start
+    ```
+    This will launch the application in your default web browser at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+* **View the Family Tree:** The application displays a visual representation of the family tree upon loading.
+* **Click on a Person Box:** Click on any person box (e.g., "Brother 1", "Wife 2") to view their detailed information.
+* **View Details:** The selected person's information (date of birth, date of death, address) will be displayed within the box.
+* **Highlighting:** The clicked person box will be highlighted to indicate the active selection.
+* **Vercel Analytics:** User interactions are automatically tracked using Vercel Analytics.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## File Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* `src/App.js`: Contains the main React component for the application.
+* `src/App.css`: Contains the CSS styles for the application.
+* `src/index.js`: Entry point of the React application.
+* `src/index.css`: Global CSS styles.
+* `src/logo.svg`: Placeholder image files for the person boxes. Replace these with actual images.
+* `public/index.html`: Main HTML file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Image Replacement
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Replace the placeholder image files (`src/logo.svg`) with your own images for each person in the family tree.
+* Ensure that the image file paths in `App.js` are updated accordingly.
 
-## Learn More
+## Customization
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* **Styling:** Modify `src/App.css` to customize the appearance of the family tree.
+* **Data:** Update the person information (date of birth, date of death, address) in `App.js` to reflect your actual family tree data.
+* **Structure:** Modify the HTML structure in `App.js` to represent your desired family tree layout.
+* **Add/Remove People:** Add or remove person boxes and adjust the layout as needed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Vercel Analytics
 
-### Code Splitting
+* This application uses Vercel Analytics to track user interactions.
+* Ensure that you have set up Vercel Analytics for your project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deployment
 
-### Analyzing the Bundle Size
+* Deploy the application to a hosting platform of your choice (e.g., Vercel, Netlify).
+* Follow the deployment instructions provided by your hosting platform.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Notes
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* This application is a basic example and can be extended to include more features and functionalities.
+* Consider using a data structure (e.g., JSON) to store and manage the family tree data for larger and more complex family trees.
+* For a better user experience, implement responsive design to ensure the application works well on different screen sizes.
