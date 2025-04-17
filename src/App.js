@@ -80,7 +80,7 @@ function App() {
                 onClick={() => handleBoxClick('Wife 2')}
               >
                 <img src={wife2Image} alt="Wife 2" className="box-image" />
-                Hajurama 2
+                Kalika Khadka
                 <div className="person-info">
                   <div>Date of Birth: 01-01-1990</div>
                   <div>Date of Death: N/A</div>
@@ -156,7 +156,7 @@ function App() {
                 onClick={() => handleBoxClick('Wife 4')}
               >
                 <img src={wife4Image} alt="Wife 4" className="box-image" />
-                Hajurama 2
+                Yam Kumari Khadka
                 <div className="person-info">
                   <div>Date of Birth: 01-01-1995</div>
                   <div>Date of Death: N/A</div>
