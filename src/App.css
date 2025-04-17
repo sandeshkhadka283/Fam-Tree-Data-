@@ -1,19 +1,95 @@
 /* App.css */
+/* ========== Base Styles ========== */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f0f4f8, #e8eaf6); /* Softer background gradient */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
-  color: #333; /* Dark grey text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* ========== Border Utilities ========== */
+.border-main {
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  background-color: #01adad;
+}
+
+.border-secondary {
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background-color: #e22323;
+}
+
+.border-dotted {
+  border: 1px dotted #ccc;
+  border-radius: 6px;
+  background-color: #928c8c;
+}
+
+.border-dashed {
+  border: 1px dashed #ddd;
+  border-radius: 4px;
+  background-color: #333;
+}
+
+.border-light {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #ff18c5;
+}
+
+/* ========== Background Utilities ========== */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #f0f4f8, #d9dae0);
+}
+
+.bg-gradient-card {
+  background: linear-gradient(145deg, #ffffff, #ff7979);
+}
+
+.bg-gradient-active {
+  background: linear-gradient(145deg, #81c784, #14e21e);
+}
+
+.bg-gradient-child {
+  background: linear-gradient(145deg, #e0f2f7, #2eb0ec);
+}
+
+.bg-gradient-subchild {
+  background: linear-gradient(145deg, #e8f5e9, #0aff99);
+}
+
+/* ========== Layout Styles ========== */
+.overall-container {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brothers-container-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brother-section {
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .brothers-container {
   display: flex;
   gap: 120px;
-  margin-top: 80px;
+  margin-top: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -25,10 +101,10 @@
   gap: 50px;
 }
 
+/* ========== Component Styles ========== */
 .person-box {
   width: 180px;
   height: 180px;
-  background: linear-gradient(145deg, #ffffff, #f0f0f0);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -39,7 +115,6 @@
   position: relative;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
-  border: none;
 }
 
 .person-box:hover {
@@ -48,7 +123,6 @@
 }
 
 .person-box.active {
-  background: linear-gradient(145deg, #81c784, #66bb6a); /* Brighter green gradient */
   color: white;
   box-shadow: 12px 12px 24px #55a858, -12px -12px 24px #79d27c;
 }
@@ -58,6 +132,7 @@
   gap: 60px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .wife-group {
@@ -74,26 +149,37 @@
   margin-top: 15px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  margin-top: 20px;
 }
 
-.child-box {
+.child-unit {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90px;
-  height: 70px;
-  background: linear-gradient(145deg, #e0f2f7, #b3e5fc); /* Light blue gradient */
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.child-box {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  min-height: 80px;
   border-radius: 10px;
   justify-content: center;
   font-size: 15px;
   flex-shrink: 0;
-  box-shadow: 8px 8px 16px #a3cfd2, -8px -8px 16px #c1ffff;
-  border: none;
+  box-shadow: 8px 8px 16px #a3cfd2, -8px -8px 16px #01adad;
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .child-box:hover {
-  transform: scale(1.05); /* Slight scale on hover */
+  transform: scale(1.05);
 }
 
 .box-image {
@@ -106,7 +192,17 @@
   box-shadow: 5px 5px 10px #c2c2c2, -5px -5px 10px #ffffff;
 }
 
-/* Connection lines */
+.child-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 6px #c2c2c2, -3px -3px 6px #ffffff;
+}
+
+/* ========== Connection Lines ========== */
 .person-box::after {
   content: '';
   position: absolute;
@@ -129,73 +225,72 @@
   background: linear-gradient(to top, #d1d1d1, #e6e6e6);
 }
 
-.child-image {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 5px;
-  border: 2px solid #fff;
-  box-shadow: 3px 3px 6px #c2c2c2, -3px -3px 6px #ffffff;
+.child-box.has-sub-children::after {
+  content: '';
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  border-left: 2px dotted #888;
+  z-index: -1;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .brothers-container {
-    gap: 80px;
-  }
-
-  .wives-container {
-    gap: 40px;
-  }
-
-  .person-box {
-    width: 160px;
-    height: 160px;
-  }
-
-  .box-image {
-    width: 65px;
-    height: 65px;
-  }
-
-  .child-box {
-    width: 80px;
-    height: 60px;
-    font-size: 14px;
-  }
-
-  .child-image {
-    width: 40px;
-    height: 40px;
-  }
+.subchildren-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  padding: 8px;
+  margin-top: 10px;
 }
 
-@media (max-width: 480px) {
-  .brothers-container {
-    gap: 60px;
-  }
-
-  .person-box {
-    width: 140px;
-    height: 140px;
-  }
-
-  .child-box {
-    width: 70px;
-    height: 55px;
-    font-size: 13px;
-  }
+.subchild-box {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  min-height: 60px;
+  border-radius: 8px;
+  font-size: 12px;
+  box-shadow: 5px 5px 10px #c8d7ca, -5px -5px 10px #fcffff;
+  transition: transform 0.3s ease;
 }
 
+.subchild-box:hover {
+  transform: scale(1.05);
+}
+
+/* ========== Text & Info Styles ========== */
 .person-info {
-  text-align: left; /* Align text to the left */
+  text-align: left;
   margin-top: 5px;
-  font-size: 13px; /* Slightly smaller font */
-  line-height: 1.4; /* Improve line spacing */
-  padding: 0 5px; /* Add padding for better spacing */
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 0 5px;
 }
 
 .person-info div {
   margin: 2px 0;
+}
+
+/* ========== Media Queries ========== */
+@media (max-width: 768px) {
+  .brothers-container { gap: 80px; }
+  .wives-container { gap: 40px; }
+  .person-box { width: 160px; height: 160px; }
+  .box-image { width: 65px; height: 65px; }
+  .child-box { width: 80px; min-height: 60px; font-size: 14px; }
+  .child-image { width: 40px; height: 40px; }
+  .subchild-box { width: 70px; min-height: 50px; font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+  .brothers-container { gap: 60px; }
+  .person-box { width: 140px; height: 140px; }
+  .child-box { width: 70px; min-height: 55px; font-size: 13px; }
+  .subchild-box { width: 60px; min-height: 45px; font-size: 10px; }
 }
