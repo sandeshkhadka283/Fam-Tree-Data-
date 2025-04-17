@@ -26,9 +26,9 @@ const familyData = [
             name: "Prem Dhoj Khadka",
             image: placeholderImage,
             subChildren: [
-              { id: 'subchild1', name: "Son 1", image: placeholderImage },
-              { id: 'subchild2', name: "Son 2", image: placeholderImage },
-              { id: 'subchild3', name: "Son 3", image: placeholderImage },
+              { id: 'subchild1', name: "Nirmal Khadka", image: placeholderImage },
+              { id: 'subchild2', name: "Nirajan Khadka", image: placeholderImage },
+              { id: 'subchild3', name: "Niraj Khadka", image: placeholderImage },
             ]
           },
           { // Child 2 of Wife 1 (Pitambar)
@@ -36,8 +36,8 @@ const familyData = [
             name: "Pitambar Khadka",
             image: placeholderImage,
             subChildren: [
-              { id: 'subchild4', name: "Son", image: placeholderImage },
-              { id: 'subchild5', name: "Daughter", image: placeholderImage },
+              { id: 'subchild4', name: "Aayush Khadka", image: placeholderImage },
+              { id: 'subchild5', name: "Aashisha Khadka", image: placeholderImage },
             ]
           },
           { // Child 3 of Wife 1 (Resham)
@@ -45,7 +45,7 @@ const familyData = [
             name: "Resham",
             image: placeholderImage,
             subChildren: [
-              { id: 'subchild6', name: "Daughter", image: placeholderImage }
+              { id: 'subchild6', name: "Tripti Khadka", image: placeholderImage }
             ]
           }
         ]
@@ -59,7 +59,7 @@ const familyData = [
         image: placeholderImage,
         children: [
           { id: 'child4', name: "Krishna Dhoj Khadka", image: placeholderImage, subChildren: [] },
-          { id: 'child5', name: "Hari Khadka", image: placeholderImage, subChildren: [{ id: 'subchild7', name: "Sub Child D", image: placeholderImage }] },
+          { id: 'child5', name: "Hari Khadka", image: placeholderImage, subChildren: [{ id: 'subchild7', name: "Dipesh Khadka", image: placeholderImage }] },
           { id: 'child6', name: "Ghaman Singh Khadka", image: placeholderImage, subChildren: [] }
         ]
       }
@@ -86,9 +86,9 @@ const familyData = [
             name: "Yagya Rath Khadka",
             image: placeholderImage,
             subChildren: [
-              { id: 'subchild8', name: "Son 1", image: placeholderImage },
-              { id: 'subchild9', name: "Son 2", image: placeholderImage },
-              { id: 'subchild10', name: "Daughter", image: placeholderImage },
+              { id: 'subchild8', name: "Anurag Khadka", image: placeholderImage },
+              { id: 'subchild9', name: "Parool Khadka", image: placeholderImage },
+              { id: 'subchild10', name: "Abhas Khadka", image: placeholderImage },
             ]
           },
           { // Child 8 (Deepak)
@@ -96,9 +96,9 @@ const familyData = [
             name: "Deepak Khadka",
             image: placeholderImage,
             subChildren: [
-              { id: 'subchild11', name: "Son", image: placeholderImage },
-              { id: 'subchild12', name: "Daughter 1", image: placeholderImage },
-              { id: 'subchild13', name: "Daughter 2", image: placeholderImage },
+              { id: 'subchild11', name: "Prince Khadka", image: placeholderImage },
+              { id: 'subchild12', name: "Aakriti Khadka", image: placeholderImage },
+              { id: 'subchild13', name: "Prakriti Khadka", image: placeholderImage },
             ]
           },
           { // Child 9 (Yadav)
@@ -106,8 +106,8 @@ const familyData = [
             name: "Yadav Khadka",
             image: placeholderImage,
             subChildren: [
-              { id: 'subchild14', name: "Son 1", image: placeholderImage },
-              { id: 'subchild15', name: "Son 2", image: placeholderImage },
+              { id: 'subchild14', name: "Samyam Khadka", image: placeholderImage },
+              { id: 'subchild15', name: "Sano Khadka", image: placeholderImage },
             ]
           },
           { // Child 10 (Tejendra)
@@ -115,8 +115,8 @@ const familyData = [
             name: "Tejendra Khadka",
             image: placeholderImage,
             subChildren: [
-              { id: 'subchild16', name: "Son", image: placeholderImage },
-              { id: 'subchild17', name: "Daughter", image: placeholderImage },
+              { id: 'subchild16', name: "Sandesh Khadka", image: placeholderImage },
+              { id: 'subchild17', name: "Sayana Khadka", image: placeholderImage },
             ]
           }
         ]
@@ -135,8 +135,8 @@ const familyData = [
             name: "Madhusudan Khadka",
             image: placeholderImage,
             subChildren: [
-              { id: 'subchild18', name: "Daughter", image: placeholderImage },
-              { id: 'subchild19', name: "Son", image: placeholderImage },
+              { id: 'subchild18', name: "Bikalpa Khadka", image: placeholderImage },
+              { id: 'subchild19', name: "BInjan Khadka", image: placeholderImage },
             ]
           },
           { // Child 12 (Basanta)
@@ -144,8 +144,8 @@ const familyData = [
             name: "Basanta Khadka",
             image: placeholderImage,
             subChildren: [
-              { id: 'subchild20', name: "Son", image: placeholderImage },
-              { id: 'subchild21', name: "Daughter", image: placeholderImage },
+              { id: 'subchild20', name: "Arju Khadka", image: placeholderImage },
+              { id: 'subchild21', name: "Aadarsh Khadka", image: placeholderImage },
             ]
           }
         ]
